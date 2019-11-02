@@ -46,3 +46,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'fast_jsonapi', '~> 1.5'
 gem 'factory_bot_rails'
 gem 'pg'
+gem 'kaminari', '~> 0.17.0'
+gem 'octokit', '~> 4.14'
