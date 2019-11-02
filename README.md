@@ -28,7 +28,7 @@ ex:
     end
 
 
-#### RSpec-Rails
+#### RSpec-rails
 Instalar  a gem **rspec-rails** e rodar o generator
     
     rails g rspec:install
@@ -74,10 +74,10 @@ Especificar no render json o serializer a ser usado, ex:
     
 ### Status codes
 
-200 :ok                         success message for GET requests
-201 :created                    resource successfully created  
-204 :no_content                 usually for update & destroy actions
-401 :not_authorized             no authentication or invalid one
-403 :forbiden                   no permission for this action
-404 :not_found                  the requested resource can't be found
-422 :unprocessable_entity       the processed resource is invalid
+    200 :ok                         success message for GET requests
+    201 :created                    resource successfully created  
+    204 :no_content                 usually for update & destroy actions
+    401 :not_authorized             no authentication or invalid one
+    403 :forbiden                   no permission for this action
+    404 :not_found                  the requested resource can't be found
+    422 :unprocessable_entity       the processed resource is invalid
