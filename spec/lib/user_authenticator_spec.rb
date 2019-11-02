@@ -47,6 +47,14 @@ describe UserAuthenticator do
       it 'should save the user when does not exists' do
         expect { subject }.to change { User.count }.by(1)
       end
+
+      it 'should reuse already registered user' do
+        user = create :user, user_data
+
+        expect{ subject }.not_to change { User.count }
+        expect(authenticator.user).to eq(user)
+      end
+
     end
 
   end
